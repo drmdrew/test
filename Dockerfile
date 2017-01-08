@@ -1,3 +1,5 @@
 FROM debian:jessie
 
-RUN echo "Hello World"
+COPY README.md /usr/src/test/README.md
+
+RUN cat /usr/src/test/README.md
